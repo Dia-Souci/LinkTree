@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LinkTree.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Traxy Tree</title>
+</head>
+<body>
+    
+    <div class="fadeContainer">
+        <div class="logo">
+            <img src="images/Logo.svg" alt="">
+        </div>
+        <button class="PurpleContainer">
+            <a href="https://www.tiktok.com/@traxygps">TikTok</a>
+            
+        </button>
+        <button class="PurpleContainer">
+            <a href="https://www.instagram.com/traxy_gps?igshid=MWZjMTM2ODFkZg==            ">Instagram</a>
+        </button>
+        <button class="PurpleContainer">
+            <a href="https://www.facebook.com/profile.php?id=100095060184762&mibextid=ZbWKwL">Facebook</a>
+        </button>
+        <button class="PurpleContainer">
+            <a href="">LinkedIn</a>
+        </button>
+        <button class="PurpleContainer">
+            <a href="https://www.s3.dz/#/login">Plateforme</a>
+        </button>
+        <button class="PurpleContainer" id="whatsButton">
+            <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+        </button>
+
+        
+        <button class="RoundPurple" id="callButton">
+            <i class="fa-solid fa-phone"></i> <span class="btn-txt">Call Us</span>
+        </button>
+           
+
+    </div>
+    
+</body>
+<script>
+    // JavaScript to handle the button click
+    document.getElementById("callButton").addEventListener("click", function () {
+        // Replace '1234567890' with the phone number you want to call
+        var phoneNumber = "+213555530355";
+
+        // You can use this line for a phone call
+        window.location.href = "tel:" + phoneNumber;
+
+        // Or this line for opening WhatsApp
+        // Make sure you've installed WhatsApp and replace 'Message' with your desired message
+        //window.location.href = "https://wa.me/" + phoneNumber ;
+    });
+    document.getElementById("whatsButton").addEventListener("click", function () {
+        // Replace '1234567890' with the phone number you want to call
+        var phoneNumber = "+213555530355";
+
+        // You can use this line for a phone call
+        //window.location.href = "tel:" + phoneNumber;
+
+        // Or this line for opening WhatsApp
+        // Make sure you've installed WhatsApp and replace 'Message' with your desired message
+        window.location.href = "https://wa.me/" + phoneNumber ;
+    });
+</script>
+</html>
